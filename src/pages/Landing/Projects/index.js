@@ -22,9 +22,9 @@ const Projects = ({theme}) => {
                 <h3>Projects</h3>
                 <h2>Some things i did...</h2>
             </Title>
-            <ProjectItem layout={order.odd}/>
-            <ProjectItem layout={order.even}/>
-            <ProjectItem layout={order.odd}/>
+            <ProjectItem layout={order.odd} order={"odd"}/>
+            <ProjectItem layout={order.even}  order={"even"}/>
+            <ProjectItem layout={order.odd} order={"odd"}/>
         </Container>
     )
 }

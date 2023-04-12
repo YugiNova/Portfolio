@@ -1,7 +1,8 @@
 import { Button } from "antd";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const ThemeButton = styled(Button)`
+export const ThemeButton = styled(motion.Button)`
     width: 3rem;
     height: 3rem;
     border-radius: 50%;

@@ -48,7 +48,7 @@ const ToggleButton = () => {
 
 
     return(
-        <ThemeButton theme={theme} onClick={ToggleColor}>
+        <ThemeButton whileTap={{rotateZ: 0.5}} theme={theme} onClick={ToggleColor}>
             <Icon src={icon}/>
         </ThemeButton>
     )

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -27,6 +28,11 @@ export const Title = styled.div`
         font-size: 1.8rem;
         color: ${props => props.theme.secondaryFont};
         margin: 1rem 0;
+
+        div{
+            display: inline-block;
+            font-size: 1.8rem;
+        }
     }
 
     @media screen and (max-width:600px){
@@ -34,7 +40,7 @@ export const Title = styled.div`
     }
 `
 
-export const Contacts = styled.div`
+export const Contacts = styled(motion.div)`
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
@@ -49,7 +55,7 @@ export const Contacts = styled.div`
     }
 `
 
-export const ContactItem = styled.div`
+export const ContactItem = styled(motion.div)`
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -59,6 +65,7 @@ export const ContactItem = styled.div`
     background: ${props => props.theme.itemBackground};
     border-radius: 3rem;
     padding: 1rem;
+    overflow: hidden;
 `
 
 export const ImageWrapper = styled.div`

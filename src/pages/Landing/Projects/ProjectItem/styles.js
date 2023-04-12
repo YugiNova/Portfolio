@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
     display: grid;
     grid-template-columns: ${props => props.layout.templateColumn};
     grid-template-rows: 1fr;
@@ -33,13 +34,13 @@ export const Info = styled.div`
     }
 `
 
-export const Name = styled.h2`
+export const Name = styled(motion.h2)`
     font-size: 1.7rem;
     color: ${props => props.theme.primaryFont};
     margin: 0;
 `
 
-export const Detail = styled.p`
+export const Detail = styled(motion.p)`
     font-size: 1.25rem;
     color: ${props => props.theme.thirdFont};
     margin: 1rem 0;
@@ -73,7 +74,7 @@ export const WebLink = styled.div`
     align-items:center;
 ` 
 
-export const Link = styled(NavLink)`
+export const Link = styled(motion.NavLink)`
     color: ${props => props.theme.secondaryFont};
     text-decoration: none;
     font-size: 1.25rem;

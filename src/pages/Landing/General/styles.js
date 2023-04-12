@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
     width: 100%;
@@ -124,7 +125,7 @@ export const Skill = styled.div`
     }
 `
 
-export const TechList = styled.div`
+export const TechList = styled(motion.div)`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -132,7 +133,7 @@ export const TechList = styled.div`
     flex-wrap: wrap;
 `
 
-export const TechIcon = styled.div`
+export const TechIcon = styled(motion.div)`
     background-color: ${props => props.theme.primaryBackground};
     box-shadow: ${props => props.theme.boxShadow};
     margin: 0 1rem;

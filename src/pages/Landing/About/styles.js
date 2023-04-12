@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -16,7 +17,7 @@ export const Container = styled.div`
     }
 `
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
     background-image: url(${props => props.img});
     background-position: 60% 50%;
     width: 100%;
@@ -25,7 +26,7 @@ export const Image = styled.img`
     
 `
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
 
     h3{
         margin: 0;

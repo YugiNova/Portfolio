@@ -3,4 +3,5 @@ import styled from "styled-components";
 export const Layout = styled.div`
     position: relative;
     width: 100%;
+    overflow-x:hidden;
 `
