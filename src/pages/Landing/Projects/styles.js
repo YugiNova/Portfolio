@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     padding: 5rem 20rem;
-    background-color: ${props => props.theme.secondaryBackground};
+    background: ${props => props.theme.secondaryBackground};
     display: flex;
     flex-direction: column;
     justify-content: center;

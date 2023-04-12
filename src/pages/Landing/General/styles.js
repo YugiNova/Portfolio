@@ -9,7 +9,7 @@ export const Container = styled.div`
     gap: 2rem;
 
     margin-top: 4.6rem;
-    background-color: ${props => props.theme.secondaryBackground};
+    background: ${props => props.theme.secondaryBackground};
     padding: 5rem 20rem;
 
     @media screen and (max-width: 600px) {

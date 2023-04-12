@@ -1,6 +1,7 @@
 import location from "../../../assets/location.png"
 import mail from "../../../assets/mail.png"
 import phone from "../../../assets/phone.png"
+import facebook from "../../../assets/facebook.svg"
 import { Container, Title, Contacts, ContactItem, ImageWrapper, Image, ContactTitle, ContactDetail } from "./styles"
 
 const Contact = ({theme}) => {
@@ -26,6 +27,11 @@ const Contact = ({theme}) => {
                     <ImageWrapper theme={theme}><Image src={phone}/></ImageWrapper>
                     <ContactTitle theme={theme}>Phone</ContactTitle>
                     <ContactDetail theme={theme}>0902647540</ContactDetail>
+                </ContactItem>
+                <ContactItem theme={theme}>
+                    <ImageWrapper theme={theme}><Image src={facebook}/></ImageWrapper>
+                    <ContactTitle theme={theme}>Facebook</ContactTitle>
+                    <ContactDetail theme={theme}>Yugi Nova</ContactDetail>
                 </ContactItem>
             </Contacts>
         </Container>

@@ -36,24 +36,29 @@ export const Title = styled.div`
 
 export const Contacts = styled.div`
     display: grid;
-    grid-template-columns: 1.25fr 1.25fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 2rem;
     margin: 2rem 0;
     width: 100%;
 
     @media screen and (max-width:600px){
         grid-template-columns: 1fr;
         justify-items: start;
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
 `
 
 export const ContactItem = styled.div`
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 0.25rem;
+    background: ${props => props.theme.itemBackground};
+    border-radius: 3rem;
+    padding: 1rem;
 `
 
 export const ImageWrapper = styled.div`

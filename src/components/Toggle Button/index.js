@@ -16,6 +16,7 @@ const ToggleButton = () => {
     const lightTheme = {
         primaryBackground:"#fff",
         secondaryBackground:"#f9f9f9",
+        itemBackground:"#fff",
         primaryFont: "#27E1C1",
         secondaryFont: "#2d2e32",
         thirdFont: "#767676",
@@ -24,7 +25,8 @@ const ToggleButton = () => {
 
     const darkTheme = {
         primaryBackground:"black",
-        secondaryBackground:"gray",
+        secondaryBackground:`linear-gradient(to right, #ff00cc, #333399)`,
+        itemBackground:`linear-gradient(to right, #ff00cc, #333399)`,
         primaryFont: "#27E1C1",
         secondaryFont: "white",
         thirdFont: "#f9f9f9",

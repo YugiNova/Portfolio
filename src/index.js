@@ -10,7 +10,7 @@ import { Provider } from 'react-redux';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Portfolio/",
     element: <Landing/>
   }
 ])

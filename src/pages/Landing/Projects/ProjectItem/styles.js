@@ -28,6 +28,7 @@ export const Info = styled.div`
     grid-row: 1/2;
 
     @media screen and (max-width: 600px){
+        grid-column: 1/2;
         grid-row: 2/3;
     }
 `
@@ -50,6 +51,7 @@ export const TechUse = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items:center;
+    
 
     margin: 1rem 0;
 
@@ -58,6 +60,8 @@ export const TechUse = styled.div`
         padding:0.5rem 1rem;
         font-size: 1rem;
         box-shadow: ${props => props.theme.boxShadow};
+        background: ${props => props.theme.itemBackground};
+        border-radius: 1rem;
     }
 
 `
@@ -93,6 +97,7 @@ export const WebImage = styled.a`
     box-shadow: ${props => props.theme.boxShadow};
 
     @media screen and (max-width: 600px){
+        grid-column: 1/2;
         grid-row: 1/2;
         height: 100%;
     }
