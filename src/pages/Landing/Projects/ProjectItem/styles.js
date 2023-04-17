@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled(motion.div)`
@@ -74,7 +74,7 @@ export const WebLink = styled.div`
     align-items:center;
 ` 
 
-export const Link = styled(motion.NavLink)`
+export const CodeLink = styled(motion.a)`
     color: ${props => props.theme.secondaryFont};
     text-decoration: none;
     font-size: 1.25rem;
@@ -110,13 +110,13 @@ export const Image = styled.img`
     transition: transform 5s ease-in-out;
 
     :hover{
-        transform: translateY(-70%);
+        transform: translateY(calc((100% - 18rem) * -1));
     }
 
     @media screen and (max-width: 600px){
 
         :hover{
-        transform: translateY(-52%);
+        transform: translateY(calc((100% - 25rem) * -1));
     }
     }
     
